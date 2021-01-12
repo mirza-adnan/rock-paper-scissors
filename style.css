@@ -154,6 +154,10 @@ header {
         width: 70px;
     }
 
+    #outcome {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -176,6 +180,10 @@ header {
 
 @media screen and (max-width: 450px) {
     #buttons {
-        width: 100%;
+        width: 90%;
+    }
+
+    .button {
+        transform: scale(0.9);
     }
 }
