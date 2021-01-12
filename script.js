@@ -55,11 +55,15 @@ rock.addEventListener("mousedown", function(){
     if (player_score >= 10) {
         outcome.textContent = "VICTORY";
         player_score = 0;
-        player_score_display.textContent = String(player_score)
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
     } else if (computer_score >= 10) {
         outcome.textContent = "DEFEAT";
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
         computer_score = 0;
-        computer_score_display.textContent = String(computer_score)
+        computer_score_display.textContent = String(computer_score);
     }
 });
 
@@ -86,8 +90,12 @@ paper.addEventListener("mousedown", function(){
         outcome.textContent = "VICTORY";
         player_score = 0;
         player_score_display.textContent = String(player_score)
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score)
     } else if (computer_score >= 10) {
         outcome.textContent = "DEFEAT";
+        player_score = 0;
+        player_score_display.textContent = String(player_score)
         computer_score = 0;
         computer_score_display.textContent = String(computer_score)
     }
@@ -117,10 +125,15 @@ scissors.addEventListener("mousedown", function(){
         outcome.textContent = "VICTORY";
         player_score = 0;
         player_score_display.textContent = String(player_score)
-    } else if (computer_score >= 10) {
-        outcome.textContent = "DEFEAT";
         computer_score = 0;
         computer_score_display.textContent = String(computer_score)
+    } else if (computer_score >= 10) {
+        outcome.textContent = "DEFEAT";
+        player_score = 0;
+        player_score_display.textContent = String(player_score)
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score)
+        
     }
 });
 

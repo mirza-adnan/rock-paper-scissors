@@ -149,6 +149,17 @@ header {
     }
 }
 
+@media screen and (max-width: 650px) {
+    #buttons {
+        width: 80%;
+    }
+
+    .img {
+        width: 70px;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     #buttons {
         width: 80%;
@@ -160,5 +171,11 @@ header {
 
     .move {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #buttons {
+        width: 100%;
     }
 }
