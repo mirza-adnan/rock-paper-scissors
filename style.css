@@ -24,7 +24,7 @@ header {
     width: 100%;
     font-family: Potta One;
     color: #c3073f;
-    font-size: larger;
+    font-size: 20px;
 }
 
 #title {
@@ -193,5 +193,22 @@ header {
 
     #outcome {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .button {
+        transform: scale(0.8);
+    }
+
+    .scores {
+        font-size: 15px;
+        min-width: 150px;
+    }
+
+    .move {
+        font-size: 16px;
+        min-width: 150px;
+        height: 130px;
     }
 }
