@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Rock Paper Scissors</h1>
+        </header>
+        <div id="scores">
+            <div class="scores">
+                <h3 id="player-score">Player: <span class="player-score-num"></span></h3>
+            </div>
+            <div class="scores">
+                <h3 id="computer-score">Computer: <span class="computer-score-num"></span></h3>
+            </div>
+        </div>
+        <div id="moves">
+            <div class="move">
+                <h2 id="player-move"></h2>
+            </div>
+            <div class="move">
+                <h2 id="computer-move"></h2>
+            </div>
+        </div>
+        <div id="outcome">
+            <p id="outcome-text">FIRST TO 10 POINTS WINS</p>
+        </div>
+        <div id="buttons">
+            <div class="button pop" id="rock">
+                <img src="img/rock.png" alt="Rock">
+                <h3>Rock</h3>
+            </div>
+            <div class="button pop" id="paper">
+                <img src="img/paper.png" alt="Paper">
+                <h3>Paper</h3>
+            </div>
+            <div class="button pop" id="scissors">
+                <img src="img/scissors.png" alt="Scissors">
+                <h3>Scissors</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

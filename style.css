@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    height: 100%;
+}
+
+#container {
+    font-family: Poppins;
+    /*background-image: linear-gradient(to bottom right, #85dcba, #41b3a3);*/
+    height: 100%;
+    background-color: #1a1a1d;
+}
+
+header {
+    width: 100%;
+    font-family: Potta One;
+    color: #950740;
+    font-size: larger;
+}
+
+#title {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    color: rgb(231, 231, 231);
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+.scores {
+    width: 250px;
+    text-align: center;
+    border: 4px solid #c3073f;
+    box-shadow: 0 0 1rem #c3073f;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#moves {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.player-score-num, .computer-score-num {
+    position: relative;
+    top: 1px;
+    color: #c3073f;
+}
+
+.move {
+    
+    width: 250px;
+    min-width: 200px;
+    height: 150px;
+    /*border: 3px solid #4e4e50;*/
+    border: 4px solid #c3073f;
+    box-shadow: 0 0 1rem #c3073f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #c3073f;
+    font-family: Potta One;
+}
+
+#outcome {
+    width: 100%;
+    text-align: center;
+    color: #c3073f;
+    font-size: 30px;
+    font-family: Potta One;
+}
+
+#buttons {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 60px auto;
+    height: 150px;
+}
+
+.button {
+    text-align: center;
+    border: 4px solid black;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #950740;
+    background-color: rgba(153, 153, 153, 0.2);
+    transition: all 0.4s;
+}
+
+.pop:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 4px solid #c3073f;
+    box-shadow: 0 0 1rem #c3073f;
+    color: #c3073f;
+    text-shadow: 0px 0px 3px #c3073f;
+}
+
+.click {
+    transform: scale(0.9);
+}
