@@ -73,13 +73,44 @@ paper.addEventListener("mousedown", function(){
         player_score += 1;
         player_score_display.textContent = String(player_score);
     } else if (comp_play === "paper") {
-        outcome.textContent = "Tie. You Both Played Paper";
+        outcome.textContent = "TIE. You Both Played Paper";
         computer_move.textContent = "PAPER";
     } else {
         outcome.textContent = "You Lose This Round";
         computer_move.textContent = "SCISSORS";
         computer_score += 1;
         computer_score_display.textContent = String(computer_score);
+    }
+
+    if (player_score >= 10) {
+        outcome.textContent = "VICTORY";
+        player_score = 0;
+        player_score_display.textContent = String(player_score)
+    } else if (computer_score >= 10) {
+        outcome.textContent = "DEFEAT";
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score)
+    }
+});
+
+scissors.addEventListener("mousedown", function(){
+    comp_play = compPlay()
+    player_move.textContent = "SCISSORS";
+    click(scissors)
+    if (comp_play === "rock") {
+        outcome.textContent = "You Lose This Round";
+        computer_move.textContent = "ROCK";
+        computer_score += 1;
+        computer_score_display.textContent = String(computer_score);
+    } else if (comp_play === "paper") {
+        outcome.textContent = "You Win This Round";
+        computer_move.textContent = "PAPER";
+        player_score += 1;
+        player_score_display.textContent = String(player_score);
+    } else {
+        outcome.textContent = "TIE. You Both Played Scissors";
+        computer_move.textContent = "SCISSORS";
+        
     }
 
     if (player_score >= 10) {
