@@ -239,4 +239,8 @@ header {
     #outcome {
         font-size: 17px;
     }
+
+    header {
+        font-size: 13px;
+    }
 }
