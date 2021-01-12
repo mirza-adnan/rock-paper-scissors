@@ -176,14 +176,22 @@ header {
     .button {
         width: 30%;
     }
+
+    #outcome {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 450px) {
     #buttons {
-        width: 90%;
+        width: 85%;
     }
 
     .button {
         transform: scale(0.9);
+    }
+
+    #outcome {
+        font-size: 20px;
     }
 }
