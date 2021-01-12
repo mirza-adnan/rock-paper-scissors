@@ -211,4 +211,8 @@ header {
         min-width: 150px;
         height: 130px;
     }
+
+    #outcome {
+        font-size: 17px;
+    }
 }
