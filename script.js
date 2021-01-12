@@ -18,23 +18,23 @@ function click(play) {
     }, 120)
 }
 
-rock = document.querySelector("#rock");
-paper = document.querySelector("#paper");
-scissors = document.querySelector("#scissors");
-player_score_display = document.querySelector(".player-score-num");
-computer_score_display = document.querySelector(".computer-score-num");
-outcome = document.querySelector("#outcome-text");
-player_move = document.querySelector("#player-move");
-computer_move = document.querySelector("#computer-move");
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+const player_score_display = document.querySelector(".player-score-num");
+const computer_score_display = document.querySelector(".computer-score-num");
+const outcome = document.querySelector("#outcome-text");
+const player_move = document.querySelector("#player-move");
+const computer_move = document.querySelector("#computer-move");
 
-player_score = 0;
-computer_score = 0;
+let player_score = 0;
+let computer_score = 0;
 
 player_score_display.textContent = "0";
 computer_score_display.textContent = "0";
 
 rock.addEventListener("mousedown", function(){
-    comp_play = compPlay()
+    let comp_play = compPlay()
     player_move.textContent = "ROCK";
     click(rock)
     if (comp_play === "rock") {
@@ -68,7 +68,7 @@ rock.addEventListener("mousedown", function(){
 });
 
 paper.addEventListener("mousedown", function(){
-    comp_play = compPlay()
+    let comp_play = compPlay()
     player_move.textContent = "PAPER";
     click(paper)
     if (comp_play === "rock") {
@@ -102,7 +102,7 @@ paper.addEventListener("mousedown", function(){
 });
 
 scissors.addEventListener("mousedown", function(){
-    comp_play = compPlay()
+    let comp_play = compPlay()
     player_move.textContent = "SCISSORS";
     click(scissors)
     if (comp_play === "rock") {
