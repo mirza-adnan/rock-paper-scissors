@@ -44,6 +44,7 @@ header {
 
 .scores {
     width: 250px;
+    min-width: 200px;
     text-align: center;
     border: 4px solid #c3073f;
     box-shadow: 0 0 1rem #c3073f;
@@ -68,7 +69,6 @@ header {
 }
 
 .move {
-    
     width: 250px;
     min-width: 200px;
     height: 150px;
@@ -126,4 +126,39 @@ header {
 
 .click {
     transform: scale(0.9);
+}
+
+@media screen and (max-width: 970px) {
+    #buttons {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .move {
+        transform: scale(0.8);
+        font-size: 22px;
+    }
+
+    .scores {
+        transform: scale(0.8);
+    }
+
+    .button {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #buttons {
+        width: 80%;
+    }
+
+    .img {
+        width: 70px;
+    }
+
+    .move {
+        font-size: 20px;
+    }
 }
