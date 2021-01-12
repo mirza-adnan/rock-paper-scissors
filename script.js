@@ -33,7 +33,7 @@ let computer_score = 0;
 player_score_display.textContent = "0";
 computer_score_display.textContent = "0";
 
-rock.addEventListener("mousedown", function(){
+rock.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "ROCK";
     click(rock)
@@ -67,7 +67,7 @@ rock.addEventListener("mousedown", function(){
     }
 });
 
-paper.addEventListener("mousedown", function(){
+paper.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "PAPER";
     click(paper)
@@ -101,7 +101,7 @@ paper.addEventListener("mousedown", function(){
     }
 });
 
-scissors.addEventListener("mousedown", function(){
+scissors.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "SCISSORS";
     click(scissors)
