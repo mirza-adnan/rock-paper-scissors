@@ -143,6 +143,10 @@ header {
     .scores {
         transform: scale(0.8);
     }
+
+    #outcome {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -173,6 +177,10 @@ header {
         font-size: 20px;
     }
 
+    .scores {
+        font-size: 20px;
+    }
+
     .button {
         width: 30%;
     }
@@ -197,6 +205,17 @@ header {
 
     header {
         font-size: 17px;
+    }
+
+    .scores {
+        font-size: 17px;
+        min-width: 170px;
+    }
+
+    .move {
+        font-size: 16px;
+        min-width: 170px;
+        height: 150px;
     }
 
 }
