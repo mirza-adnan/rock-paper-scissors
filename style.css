@@ -143,10 +143,6 @@ header {
     .scores {
         transform: scale(0.8);
     }
-
-    .button {
-        transform: scale(0.8);
-    }
 }
 
 @media screen and (max-width: 650px) {
@@ -171,6 +167,10 @@ header {
 
     .move {
         font-size: 20px;
+    }
+
+    .button {
+        width: 30%;
     }
 }
 
