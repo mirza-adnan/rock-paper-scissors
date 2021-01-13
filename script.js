@@ -135,10 +135,6 @@ scissors.addEventListener("click", function(){
         computer_score_display.textContent = String(computer_score)
         
     }
-
-    rock.addEventListener("transitionend", function(){
-        rock.classList.remove("pop")
-    })
 });
 
 
