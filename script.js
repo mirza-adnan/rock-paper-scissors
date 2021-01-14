@@ -37,6 +37,19 @@ rock.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "ROCK";
     click(rock)
+
+    if (player_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    } else if (computer_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    }
+
     if (comp_play === "rock") {
         outcome.textContent = "TIE. You Both Played Rock";
         computer_move.textContent = "ROCK";
@@ -54,16 +67,8 @@ rock.addEventListener("click", function(){
 
     if (player_score >= 10) {
         outcome.textContent = "VICTORY";
-        player_score = 0;
-        player_score_display.textContent = String(player_score);
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score);
     } else if (computer_score >= 10) {
         outcome.textContent = "DEFEAT";
-        player_score = 0;
-        player_score_display.textContent = String(player_score);
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score);
     }
 });
 
@@ -71,6 +76,19 @@ paper.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "PAPER";
     click(paper)
+
+    if (player_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    } else if (computer_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    }
+
     if (comp_play === "rock") {
         outcome.textContent = "You Win This Round";
         computer_move.textContent = "ROCK";
@@ -88,16 +106,9 @@ paper.addEventListener("click", function(){
 
     if (player_score >= 10) {
         outcome.textContent = "VICTORY";
-        player_score = 0;
-        player_score_display.textContent = String(player_score)
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score)
+        
     } else if (computer_score >= 10) {
         outcome.textContent = "DEFEAT";
-        player_score = 0;
-        player_score_display.textContent = String(player_score)
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score)
     }
 });
 
@@ -105,6 +116,19 @@ scissors.addEventListener("click", function(){
     let comp_play = compPlay()
     player_move.textContent = "SCISSORS";
     click(scissors)
+
+    if (player_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    } else if (computer_score >= 10) {
+        player_score = 0;
+        player_score_display.textContent = String(player_score);
+        computer_score = 0;
+        computer_score_display.textContent = String(computer_score);
+    }
+
     if (comp_play === "rock") {
         outcome.textContent = "You Lose This Round";
         computer_move.textContent = "ROCK";
@@ -123,17 +147,8 @@ scissors.addEventListener("click", function(){
 
     if (player_score >= 10) {
         outcome.textContent = "VICTORY";
-        player_score = 0;
-        player_score_display.textContent = String(player_score)
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score)
     } else if (computer_score >= 10) {
         outcome.textContent = "DEFEAT";
-        player_score = 0;
-        player_score_display.textContent = String(player_score)
-        computer_score = 0;
-        computer_score_display.textContent = String(computer_score)
-        
     }
 });
 
